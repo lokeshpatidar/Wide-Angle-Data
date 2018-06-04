@@ -1,0 +1,2371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D64EDCC0-15E5-42C3-8647-630FA5FAC3D0}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTMS</RootNamespace>
+    <AssemblyName>CTMS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Users\Lpatidar\Documents\Visual Studio 2010\Projects\SAE\TMS\bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdverseEventDashboard.aspx.cs">
+      <DependentUpon>AdverseEventDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdverseEventDashboard.aspx.designer.cs">
+      <DependentUpon>AdverseEventDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutActionItem_Data.aspx.cs">
+      <DependentUpon>CloseOutActionItem_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutActionItem_Data.aspx.designer.cs">
+      <DependentUpon>CloseOutActionItem_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CTMSDashboard.aspx.cs">
+      <DependentUpon>CTMSDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CTMSDashboard.aspx.designer.cs">
+      <DependentUpon>CTMSDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUBJECTREGISTRATION.aspx.cs">
+      <DependentUpon>frmSUBJECTREGISTRATION.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSUBJECTREGISTRATION.aspx.designer.cs">
+      <DependentUpon>frmSUBJECTREGISTRATION.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVISITWINDOW.aspx.cs">
+      <DependentUpon>frmVISITWINDOW.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVISITWINDOW.aspx.designer.cs">
+      <DependentUpon>frmVISITWINDOW.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Graph_Screening_Failure.aspx.cs">
+      <DependentUpon>Graph_Screening_Failure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Graph_Screening_Failure.aspx.designer.cs">
+      <DependentUpon>Graph_Screening_Failure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="issueDashboard.aspx.cs">
+      <DependentUpon>issueDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="issueDashboard.aspx.designer.cs">
+      <DependentUpon>issueDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IssueDetails.aspx.cs">
+      <DependentUpon>IssueDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IssueDetails.aspx.designer.cs">
+      <DependentUpon>IssueDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ISSUES.aspx.cs">
+      <DependentUpon>ISSUES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ISSUES.aspx.designer.cs">
+      <DependentUpon>ISSUES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LabDataDashboard.aspx.cs">
+      <DependentUpon>LabDataDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabDataDashboard.aspx.designer.cs">
+      <DependentUpon>LabDataDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogSAE.aspx.cs">
+      <DependentUpon>LogSAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogSAE.aspx.designer.cs">
+      <DependentUpon>LogSAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogSAEDetails.aspx.cs">
+      <DependentUpon>LogSAEDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogSAEDetails.aspx.designer.cs">
+      <DependentUpon>LogSAEDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSiteStaff_Data.aspx.cs">
+      <DependentUpon>InitiationSiteStaff_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSiteStaff_Data.aspx.designer.cs">
+      <DependentUpon>InitiationSiteStaff_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSourceDoc.aspx.cs">
+      <DependentUpon>InitiationSourceDoc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSourceDoc.aspx.designer.cs">
+      <DependentUpon>InitiationSourceDoc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogICT.aspx.cs">
+      <DependentUpon>LogICT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogICT.aspx.designer.cs">
+      <DependentUpon>LogICT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogSubjectEnrollment.aspx.cs">
+      <DependentUpon>LogSubjectEnrollment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogSubjectEnrollment.aspx.designer.cs">
+      <DependentUpon>LogSubjectEnrollment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MedicalDashboard.aspx.cs">
+      <DependentUpon>MedicalDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MedicalDashboard.aspx.designer.cs">
+      <DependentUpon>MedicalDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AdverseEventsDetails.aspx.cs">
+      <DependentUpon>MM_AdverseEventsDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AdverseEventsDetails.aspx.designer.cs">
+      <DependentUpon>MM_AdverseEventsDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AEFilter_List.aspx.cs">
+      <DependentUpon>MM_AEFilter_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AEFilter_List.aspx.designer.cs">
+      <DependentUpon>MM_AEFilter_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AE_SubjectList.aspx.cs">
+      <DependentUpon>MM_AE_SubjectList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AE_SubjectList.aspx.designer.cs">
+      <DependentUpon>MM_AE_SubjectList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AE_WithoutCM.aspx.cs">
+      <DependentUpon>MM_AE_WithoutCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AE_WithoutCM.aspx.designer.cs">
+      <DependentUpon>MM_AE_WithoutCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AllAEComments.aspx.cs">
+      <DependentUpon>MM_AllAEComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AllAEComments.aspx.designer.cs">
+      <DependentUpon>MM_AllAEComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_AllCatComments.aspx.cs">
+      <DependentUpon>MM_AllCatComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_AllCatComments.aspx.designer.cs">
+      <DependentUpon>MM_AllCatComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_CategoryDashboard.aspx.cs">
+      <DependentUpon>MM_CategoryDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_CategoryDashboard.aspx.designer.cs">
+      <DependentUpon>MM_CategoryDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_CMList.aspx.cs">
+      <DependentUpon>MM_CMList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_CMList.aspx.designer.cs">
+      <DependentUpon>MM_CMList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_CMWithoutIFU.aspx.cs">
+      <DependentUpon>MM_CMWithoutIFU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_CMWithoutIFU.aspx.designer.cs">
+      <DependentUpon>MM_CMWithoutIFU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_CM_Ongoing.aspx.cs">
+      <DependentUpon>MM_CM_Ongoing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_CM_Ongoing.aspx.designer.cs">
+      <DependentUpon>MM_CM_Ongoing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_CM_Uncoded.aspx.cs">
+      <DependentUpon>MM_CM_Uncoded.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_CM_Uncoded.aspx.designer.cs">
+      <DependentUpon>MM_CM_Uncoded.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_Customized_AE_Filter.aspx.cs">
+      <DependentUpon>MM_Customized_AE_Filter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_Customized_AE_Filter.aspx.designer.cs">
+      <DependentUpon>MM_Customized_AE_Filter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_DataReview.aspx.cs">
+      <DependentUpon>MM_DataReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_DataReview.aspx.designer.cs">
+      <DependentUpon>MM_DataReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_Discontinuation.aspx.cs">
+      <DependentUpon>MM_Discontinuation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_Discontinuation.aspx.designer.cs">
+      <DependentUpon>MM_Discontinuation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_DoseDelayed.aspx.cs">
+      <DependentUpon>MM_DoseDelayed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_DoseDelayed.aspx.designer.cs">
+      <DependentUpon>MM_DoseDelayed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_EventDashboard.aspx.cs">
+      <DependentUpon>MM_EventDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_EventDashboard.aspx.designer.cs">
+      <DependentUpon>MM_EventDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_EventListAE.aspx.cs">
+      <DependentUpon>MM_EventListAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_EventListAE.aspx.designer.cs">
+      <DependentUpon>MM_EventListAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_EventOfInterest.aspx.cs">
+      <DependentUpon>MM_EventOfInterest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_EventOfInterest.aspx.designer.cs">
+      <DependentUpon>MM_EventOfInterest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_FilterPieChart.aspx.cs">
+      <DependentUpon>MM_FilterPieChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_FilterPieChart.aspx.designer.cs">
+      <DependentUpon>MM_FilterPieChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_frmLabCatResAE.aspx.cs">
+      <DependentUpon>MM_frmLabCatResAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_frmLabCatResAE.aspx.designer.cs">
+      <DependentUpon>MM_frmLabCatResAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_GradeDashboardViewDetails.aspx.cs">
+      <DependentUpon>MM_GradeDashboardViewDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_GradeDashboardViewDetails.aspx.designer.cs">
+      <DependentUpon>MM_GradeDashboardViewDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_GradesDashboard.aspx.cs">
+      <DependentUpon>MM_GradesDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_GradesDashboard.aspx.designer.cs">
+      <DependentUpon>MM_GradesDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_Hys.aspx.cs">
+      <DependentUpon>MM_Hys.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_Hys.aspx.designer.cs">
+      <DependentUpon>MM_Hys.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_ImportData.aspx.cs">
+      <DependentUpon>MM_ImportData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_ImportData.aspx.designer.cs">
+      <DependentUpon>MM_ImportData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_InfusionReaction.aspx.cs">
+      <DependentUpon>MM_InfusionReaction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_InfusionReaction.aspx.designer.cs">
+      <DependentUpon>MM_InfusionReaction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_IssueList.aspx.cs">
+      <DependentUpon>MM_IssueList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_IssueList.aspx.designer.cs">
+      <DependentUpon>MM_IssueList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_IssueListPopup.aspx.cs">
+      <DependentUpon>MM_IssueListPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_IssueListPopup.aspx.designer.cs">
+      <DependentUpon>MM_IssueListPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabCatagoryData.aspx.cs">
+      <DependentUpon>MM_LabCatagoryData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabCatagoryData.aspx.designer.cs">
+      <DependentUpon>MM_LabCatagoryData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabDataCategorization.aspx.cs">
+      <DependentUpon>MM_LabDataCategorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabDataCategorization.aspx.designer.cs">
+      <DependentUpon>MM_LabDataCategorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabDataChemistry.aspx.cs">
+      <DependentUpon>MM_LabDataChemistry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabDataChemistry.aspx.designer.cs">
+      <DependentUpon>MM_LabDataChemistry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabDataGrade34.aspx.cs">
+      <DependentUpon>MM_LabDataGrade34.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabDataGrade34.aspx.designer.cs">
+      <DependentUpon>MM_LabDataGrade34.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabModifiedData.aspx.cs">
+      <DependentUpon>MM_LabModifiedData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabModifiedData.aspx.designer.cs">
+      <DependentUpon>MM_LabModifiedData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabRawDataHematology.aspx.cs">
+      <DependentUpon>MM_LabRawDataHematology.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabRawDataHematology.aspx.designer.cs">
+      <DependentUpon>MM_LabRawDataHematology.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResCatCM.aspx.cs">
+      <DependentUpon>MM_LabResCatCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResCatCM.aspx.designer.cs">
+      <DependentUpon>MM_LabResCatCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResCatMH.aspx.cs">
+      <DependentUpon>MM_LabResCatMH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResCatMH.aspx.designer.cs">
+      <DependentUpon>MM_LabResCatMH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResCatVS.aspx.cs">
+      <DependentUpon>MM_LabResCatVS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResCatVS.aspx.designer.cs">
+      <DependentUpon>MM_LabResCatVS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResTab.aspx.cs">
+      <DependentUpon>MM_LabResTab.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResTab.aspx.designer.cs">
+      <DependentUpon>MM_LabResTab.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResultCategorization.aspx.cs">
+      <DependentUpon>MM_LabResultCategorization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResultCategorization.aspx.designer.cs">
+      <DependentUpon>MM_LabResultCategorization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_LabResultsTabular.aspx.cs">
+      <DependentUpon>MM_LabResultsTabular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_LabResultsTabular.aspx.designer.cs">
+      <DependentUpon>MM_LabResultsTabular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_MHList.aspx.cs">
+      <DependentUpon>MM_MHList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_MHList.aspx.designer.cs">
+      <DependentUpon>MM_MHList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_OngoingEvents.aspx.cs">
+      <DependentUpon>MM_OngoingEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_OngoingEvents.aspx.designer.cs">
+      <DependentUpon>MM_OngoingEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopupAeEvents.aspx.cs">
+      <DependentUpon>MM_PopupAeEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopupAeEvents.aspx.designer.cs">
+      <DependentUpon>MM_PopupAeEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopupGraph.aspx.cs">
+      <DependentUpon>MM_PopupGraph.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopupGraph.aspx.designer.cs">
+      <DependentUpon>MM_PopupGraph.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopupInclusionExclusion.aspx.cs">
+      <DependentUpon>MM_PopupInclusionExclusion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopupInclusionExclusion.aspx.designer.cs">
+      <DependentUpon>MM_PopupInclusionExclusion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopUpLabResultsTabular.aspx.cs">
+      <DependentUpon>MM_PopUpLabResultsTabular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopUpLabResultsTabular.aspx.designer.cs">
+      <DependentUpon>MM_PopUpLabResultsTabular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopUpQueryList.aspx.cs">
+      <DependentUpon>MM_PopUpQueryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopUpQueryList.aspx.designer.cs">
+      <DependentUpon>MM_PopUpQueryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopupTopAeFilter.aspx.cs">
+      <DependentUpon>MM_PopupTopAeFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopupTopAeFilter.aspx.designer.cs">
+      <DependentUpon>MM_PopupTopAeFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_PopUp_LabData.aspx.cs">
+      <DependentUpon>MM_PopUp_LabData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_PopUp_LabData.aspx.designer.cs">
+      <DependentUpon>MM_PopUp_LabData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_QueryList.aspx.cs">
+      <DependentUpon>MM_QueryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_QueryList.aspx.designer.cs">
+      <DependentUpon>MM_QueryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_ReCategory.aspx.cs">
+      <DependentUpon>MM_ReCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_ReCategory.aspx.designer.cs">
+      <DependentUpon>MM_ReCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_RelatedEvents.aspx.cs">
+      <DependentUpon>MM_RelatedEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_RelatedEvents.aspx.designer.cs">
+      <DependentUpon>MM_RelatedEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_SeriousEvents.aspx.cs">
+      <DependentUpon>MM_SeriousEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_SeriousEvents.aspx.designer.cs">
+      <DependentUpon>MM_SeriousEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_Severity12Events.aspx.cs">
+      <DependentUpon>MM_Severity12Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_Severity12Events.aspx.designer.cs">
+      <DependentUpon>MM_Severity12Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_Severity34Events.aspx.cs">
+      <DependentUpon>MM_Severity34Events.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_Severity34Events.aspx.designer.cs">
+      <DependentUpon>MM_Severity34Events.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_SiteReview.aspx.cs">
+      <DependentUpon>MM_SiteReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_SiteReview.aspx.designer.cs">
+      <DependentUpon>MM_SiteReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_UncodedEvents.aspx.cs">
+      <DependentUpon>MM_UncodedEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_UncodedEvents.aspx.designer.cs">
+      <DependentUpon>MM_UncodedEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_UNVISIT.aspx.cs">
+      <DependentUpon>MM_UNVISIT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_UNVISIT.aspx.designer.cs">
+      <DependentUpon>MM_UNVISIT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_VisitDates.aspx.cs">
+      <DependentUpon>MM_VisitDates.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_VisitDates.aspx.designer.cs">
+      <DependentUpon>MM_VisitDates.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_VitalSigns.aspx.cs">
+      <DependentUpon>MM_VitalSigns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_VitalSigns.aspx.designer.cs">
+      <DependentUpon>MM_VitalSigns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MM_VSList.aspx.cs">
+      <DependentUpon>MM_VSList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MM_VSList.aspx.designer.cs">
+      <DependentUpon>MM_VSList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewIssuePopup.aspx.cs">
+      <DependentUpon>NewIssuePopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewIssuePopup.aspx.designer.cs">
+      <DependentUpon>NewIssuePopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewISSUES.aspx.cs">
+      <DependentUpon>NewISSUES.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewISSUES.aspx.designer.cs">
+      <DependentUpon>NewISSUES.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewQueryPopup.aspx.cs">
+      <DependentUpon>NewQueryPopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewQueryPopup.aspx.designer.cs">
+      <DependentUpon>NewQueryPopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDList.aspx.cs">
+      <DependentUpon>PDList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDList.aspx.designer.cs">
+      <DependentUpon>PDList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectManagementDashboard.aspx.cs">
+      <DependentUpon>ProjectManagementDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectManagementDashboard.aspx.designer.cs">
+      <DependentUpon>ProjectManagementDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProtDev.aspx.cs">
+      <DependentUpon>ProtDev.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProtDev.aspx.designer.cs">
+      <DependentUpon>ProtDev.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationActionItem.aspx.cs">
+      <DependentUpon>QualificationActionItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationActionItem.aspx.designer.cs">
+      <DependentUpon>QualificationActionItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddComments.aspx.cs">
+      <DependentUpon>AddComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddComments.aspx.designer.cs">
+      <DependentUpon>AddComments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_User_Groups.aspx.cs">
+      <DependentUpon>Add_User_Groups.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_User_Groups.aspx.designer.cs">
+      <DependentUpon>Add_User_Groups.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_User_Group_Rights.aspx.cs">
+      <DependentUpon>Add_User_Group_Rights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_User_Group_Rights.aspx.designer.cs">
+      <DependentUpon>Add_User_Group_Rights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_User_Profile.aspx.cs">
+      <DependentUpon>Add_User_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_User_Profile.aspx.designer.cs">
+      <DependentUpon>Add_User_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_User_Rights.aspx.cs">
+      <DependentUpon>Add_User_Rights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_User_Rights.aspx.designer.cs">
+      <DependentUpon>Add_User_Rights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationActionItem_Data.aspx.cs">
+      <DependentUpon>QualificationActionItem_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationActionItem_Data.aspx.designer.cs">
+      <DependentUpon>QualificationActionItem_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationAgreementAndContracts.aspx.cs">
+      <DependentUpon>QualificationAgreementAndContracts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationAgreementAndContracts.aspx.designer.cs">
+      <DependentUpon>QualificationAgreementAndContracts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxFunction.aspx.cs">
+      <DependentUpon>AjaxFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxFunction.aspx.designer.cs">
+      <DependentUpon>AjaxFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Auth.aspx.cs">
+      <DependentUpon>Auth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Auth.aspx.designer.cs">
+      <DependentUpon>Auth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Password.aspx.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Change_Password.aspx.designer.cs">
+      <DependentUpon>Change_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVClinicalLaboratory.aspx.cs">
+      <DependentUpon>MVClinicalLaboratory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVClinicalLaboratory.aspx.designer.cs">
+      <DependentUpon>MVClinicalLaboratory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutActionItemsSummary.aspx.cs">
+      <DependentUpon>CloseOutActionItemsSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutActionItemsSummary.aspx.designer.cs">
+      <DependentUpon>CloseOutActionItemsSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutAdverseEvents.aspx.cs">
+      <DependentUpon>CloseOutAdverseEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutAdverseEvents.aspx.designer.cs">
+      <DependentUpon>CloseOutAdverseEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutArchival.aspx.cs">
+      <DependentUpon>CloseOutArchival.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutArchival.aspx.designer.cs">
+      <DependentUpon>CloseOutArchival.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutContactDetails.aspx.cs">
+      <DependentUpon>CloseOutContactDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutContactDetails.aspx.designer.cs">
+      <DependentUpon>CloseOutContactDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutCRF.aspx.cs">
+      <DependentUpon>CloseOutCRF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutCRF.aspx.designer.cs">
+      <DependentUpon>CloseOutCRF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutDrugAndTreatment.aspx.cs">
+      <DependentUpon>CloseOutDrugAndTreatment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutDrugAndTreatment.aspx.designer.cs">
+      <DependentUpon>CloseOutDrugAndTreatment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutHandling.aspx.cs">
+      <DependentUpon>CloseOutHandling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutHandling.aspx.designer.cs">
+      <DependentUpon>CloseOutHandling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutInspection.aspx.cs">
+      <DependentUpon>CloseOutInspection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutInspection.aspx.designer.cs">
+      <DependentUpon>CloseOutInspection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutInvestSiteFile.aspx.cs">
+      <DependentUpon>CloseOutInvestSiteFile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutInvestSiteFile.aspx.designer.cs">
+      <DependentUpon>CloseOutInvestSiteFile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutMiscellaneous.aspx.cs">
+      <DependentUpon>CloseOutMiscellaneous.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutMiscellaneous.aspx.designer.cs">
+      <DependentUpon>CloseOutMiscellaneous.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutObligation.aspx.cs">
+      <DependentUpon>CloseOutObligation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutObligation.aspx.designer.cs">
+      <DependentUpon>CloseOutObligation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutPremature.aspx.cs">
+      <DependentUpon>CloseOutPremature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutPremature.aspx.designer.cs">
+      <DependentUpon>CloseOutPremature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutReason.aspx.cs">
+      <DependentUpon>CloseOutReason.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutReason.aspx.designer.cs">
+      <DependentUpon>CloseOutReason.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutRT.aspx.cs">
+      <DependentUpon>CloseOutRT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutRT.aspx.designer.cs">
+      <DependentUpon>CloseOutRT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CloseOutSourceData.aspx.cs">
+      <DependentUpon>CloseOutSourceData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CloseOutSourceData.aspx.designer.cs">
+      <DependentUpon>CloseOutSourceData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CommonFunction\CommonFunction.cs" />
+    <Compile Include="CommonFunction\DAL.cs" />
+    <Compile Include="CreateNewVisit.aspx.cs">
+      <DependentUpon>CreateNewVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateNewVisit.aspx.designer.cs">
+      <DependentUpon>CreateNewVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_User_Group.aspx.cs">
+      <DependentUpon>Delete_User_Group.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Delete_User_Group.aspx.designer.cs">
+      <DependentUpon>Delete_User_Group.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationDocumentation.aspx.cs">
+      <DependentUpon>QualificationDocumentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationDocumentation.aspx.designer.cs">
+      <DependentUpon>QualificationDocumentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_User_Details.aspx.cs">
+      <DependentUpon>Edit_User_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_User_Details.aspx.designer.cs">
+      <DependentUpon>Edit_User_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_User_Group_Details.aspx.cs">
+      <DependentUpon>Edit_User_Group_Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_User_Group_Details.aspx.designer.cs">
+      <DependentUpon>Edit_User_Group_Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVEligibilityCheck.aspx.cs">
+      <DependentUpon>MVEligibilityCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVEligibilityCheck.aspx.designer.cs">
+      <DependentUpon>MVEligibilityCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVFacilities.aspx.cs">
+      <DependentUpon>MVFacilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVFacilities.aspx.designer.cs">
+      <DependentUpon>MVFacilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feasibility.aspx.cs">
+      <DependentUpon>Feasibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feasibility.aspx.designer.cs">
+      <DependentUpon>Feasibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmINSTITUTEDetails.aspx.cs">
+      <DependentUpon>frmINSTITUTEDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmINSTITUTEDetails.aspx.designer.cs">
+      <DependentUpon>frmINSTITUTEDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmINVDETAILS.aspx.cs">
+      <DependentUpon>frmINVDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmINVDETAILS.aspx.designer.cs">
+      <DependentUpon>frmINVDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPRODUCTDETAILS.aspx.cs">
+      <DependentUpon>frmPRODUCTDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPRODUCTDETAILS.aspx.designer.cs">
+      <DependentUpon>frmPRODUCTDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmPROJDETAILS.aspx.cs">
+      <DependentUpon>frmPROJDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmPROJDETAILS.aspx.designer.cs">
+      <DependentUpon>frmPROJDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmSUBJDETAILS.aspx.cs">
+      <DependentUpon>frmSUBJDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmSUBJDETAILS.aspx.designer.cs">
+      <DependentUpon>frmSUBJDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmVISITDETAILS.aspx.cs">
+      <DependentUpon>frmVISITDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmVISITDETAILS.aspx.designer.cs">
+      <DependentUpon>frmVISITDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frnCOUNTRYDETAILS.aspx.cs">
+      <DependentUpon>frnCOUNTRYDETAILS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frnCOUNTRYDETAILS.aspx.designer.cs">
+      <DependentUpon>frnCOUNTRYDETAILS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationHandlingAndSupply.aspx.cs">
+      <DependentUpon>InitiationHandlingAndSupply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationHandlingAndSupply.aspx.designer.cs">
+      <DependentUpon>InitiationHandlingAndSupply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVInformedConsent.aspx.cs">
+      <DependentUpon>MVInformedConsent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVInformedConsent.aspx.designer.cs">
+      <DependentUpon>MVInformedConsent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationInfrastructure.aspx.cs">
+      <DependentUpon>QualificationInfrastructure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationInfrastructure.aspx.designer.cs">
+      <DependentUpon>QualificationInfrastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationFacilities.aspx.cs">
+      <DependentUpon>InitiationFacilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationFacilities.aspx.designer.cs">
+      <DependentUpon>InitiationFacilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSafteyReporting.aspx.cs">
+      <DependentUpon>InitiationSafteyReporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSafteyReporting.aspx.designer.cs">
+      <DependentUpon>InitiationSafteyReporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVInvestigationalProduct.aspx.cs">
+      <DependentUpon>MVInvestigationalProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVInvestigationalProduct.aspx.designer.cs">
+      <DependentUpon>MVInvestigationalProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVInvestigatorStaff.aspx.cs">
+      <DependentUpon>MVInvestigatorStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVInvestigatorStaff.aspx.designer.cs">
+      <DependentUpon>MVInvestigatorStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationInvestProduct.aspx.cs">
+      <DependentUpon>QualificationInvestProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationInvestProduct.aspx.designer.cs">
+      <DependentUpon>QualificationInvestProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationInvestResponsibilities.aspx.cs">
+      <DependentUpon>QualificationInvestResponsibilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationInvestResponsibilities.aspx.designer.cs">
+      <DependentUpon>QualificationInvestResponsibilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationLaboratoryAndEquipment.aspx.cs">
+      <DependentUpon>QualificationLaboratoryAndEquipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationLaboratoryAndEquipment.aspx.designer.cs">
+      <DependentUpon>QualificationLaboratoryAndEquipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationMonitorImpression.aspx.cs">
+      <DependentUpon>QualificationMonitorImpression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationMonitorImpression.aspx.designer.cs">
+      <DependentUpon>QualificationMonitorImpression.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MonitoringVisitList.aspx.cs">
+      <DependentUpon>MonitoringVisitList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MonitoringVisitList.aspx.designer.cs">
+      <DependentUpon>MonitoringVisitList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVOpenActionItem.aspx.cs">
+      <DependentUpon>MVOpenActionItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVOpenActionItem.aspx.designer.cs">
+      <DependentUpon>MVOpenActionItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationOpenActionItem_Data.aspx.cs">
+      <DependentUpon>InitiationOpenActionItem_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationOpenActionItem_Data.aspx.designer.cs">
+      <DependentUpon>InitiationOpenActionItem_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationOpenActionitem.aspx.cs">
+      <DependentUpon>InitiationOpenActionitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationOpenActionitem.aspx.designer.cs">
+      <DependentUpon>InitiationOpenActionitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVOpenActionItem_Data.aspx.cs">
+      <DependentUpon>MVOpenActionItem_Data.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVOpenActionItem_Data.aspx.designer.cs">
+      <DependentUpon>MVOpenActionItem_Data.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationPatientProtection.aspx.cs">
+      <DependentUpon>QualificationPatientProtection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationPatientProtection.aspx.designer.cs">
+      <DependentUpon>QualificationPatientProtection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVPKProcedure.aspx.cs">
+      <DependentUpon>MVPKProcedure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVPKProcedure.aspx.designer.cs">
+      <DependentUpon>MVPKProcedure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationProjectionAndRecruitment.aspx.cs">
+      <DependentUpon>InitiationProjectionAndRecruitment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationProjectionAndRecruitment.aspx.designer.cs">
+      <DependentUpon>InitiationProjectionAndRecruitment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualificationProtocolOverview.aspx.cs">
+      <DependentUpon>QualificationProtocolOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationProtocolOverview.aspx.designer.cs">
+      <DependentUpon>QualificationProtocolOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificaionAndExp.aspx.cs">
+      <DependentUpon>QualificaionAndExp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificaionAndExp.aspx.designer.cs">
+      <DependentUpon>QualificaionAndExp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QualificationRecruitment.aspx.cs">
+      <DependentUpon>QualificationRecruitment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QualificationRecruitment.aspx.designer.cs">
+      <DependentUpon>QualificationRecruitment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="QueryListUpdate.aspx.cs">
+      <DependentUpon>QueryListUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="QueryListUpdate.aspx.designer.cs">
+      <DependentUpon>QueryListUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_User_Group_Rights.aspx.cs">
+      <DependentUpon>Remove_User_Group_Rights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remove_User_Group_Rights.aspx.designer.cs">
+      <DependentUpon>Remove_User_Group_Rights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Remove_User_Rights.aspx.cs">
+      <DependentUpon>Remove_User_Rights.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Remove_User_Rights.aspx.designer.cs">
+      <DependentUpon>Remove_User_Rights.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationReviewAndProtocol.aspx.cs">
+      <DependentUpon>InitiationReviewAndProtocol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationReviewAndProtocol.aspx.designer.cs">
+      <DependentUpon>InitiationReviewAndProtocol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationRolesAndResponsibility.aspx.cs">
+      <DependentUpon>InitiationRolesAndResponsibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationRolesAndResponsibility.aspx.designer.cs">
+      <DependentUpon>InitiationRolesAndResponsibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVSafetyReporting.aspx.cs">
+      <DependentUpon>MVSafetyReporting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVSafetyReporting.aspx.designer.cs">
+      <DependentUpon>MVSafetyReporting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSampling.aspx.cs">
+      <DependentUpon>InitiationSampling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSampling.aspx.designer.cs">
+      <DependentUpon>InitiationSampling.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportEnrollmentLog.aspx.cs">
+      <DependentUpon>ReportEnrollmentLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportEnrollmentLog.aspx.designer.cs">
+      <DependentUpon>ReportEnrollmentLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportICTLog.aspx.cs">
+      <DependentUpon>ReportICTLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportICTLog.aspx.designer.cs">
+      <DependentUpon>ReportICTLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportMonitoringVisit.aspx.cs">
+      <DependentUpon>ReportMonitoringVisit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportMonitoringVisit.aspx.designer.cs">
+      <DependentUpon>ReportMonitoringVisit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportScreeningLog.aspx.cs">
+      <DependentUpon>ReportScreeningLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportScreeningLog.aspx.designer.cs">
+      <DependentUpon>ReportScreeningLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSiteCloseOut.aspx.cs">
+      <DependentUpon>ReportSiteCloseOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSiteCloseOut.aspx.designer.cs">
+      <DependentUpon>ReportSiteCloseOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSiteInitiation.aspx.cs">
+      <DependentUpon>ReportSiteInitiation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSiteInitiation.aspx.designer.cs">
+      <DependentUpon>ReportSiteInitiation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportSiteQualification.aspx.cs">
+      <DependentUpon>ReportSiteQualification.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportSiteQualification.aspx.designer.cs">
+      <DependentUpon>ReportSiteQualification.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\COIdentityDataset.Designer.cs" />
+    <Compile Include="Reports\COIdentityDataset1.Designer.cs" />
+    <Compile Include="Reports\CO_5_15_Dataset.Designer.cs" />
+    <Compile Include="Reports\CO_5_15_Dataset1.Designer.cs" />
+    <Compile Include="Reports\CO_5_16_DataSet2.Designer.cs" />
+    <Compile Include="Reports\CO_5_16_DataSet21.Designer.cs" />
+    <Compile Include="Reports\CO_Dataset_5_16.Designer.cs" />
+    <Compile Include="Reports\CO_Dataset_5_161.Designer.cs" />
+    <Compile Include="Reports\ICTLogDetails_Dataset.Designer.cs" />
+    <Compile Include="Reports\ICTLogInfo_Dataset.Designer.cs" />
+    <Compile Include="Reports\ICTLog_Dataset.Designer.cs" />
+    <Compile Include="Reports\ReportQualAndExpDataset.Designer.cs" />
+    <Compile Include="Reports\ReportQualAndExpDataset1.Designer.cs" />
+    <Compile Include="Reports\ReportQualificationDataset.Designer.cs" />
+    <Compile Include="Reports\ReportQualificationDataset1.Designer.cs" />
+    <Compile Include="Reports\SIReportDataset.Designer.cs" />
+    <Compile Include="Reports\SIReportDataset1.Designer.cs" />
+    <Compile Include="Reports\SiteInitiationCommentsDataset.Designer.cs" />
+    <Compile Include="Reports\SiteInitiationCommentsDataset1.Designer.cs" />
+    <Compile Include="Reports\SiteInitiationDataset.Designer.cs" />
+    <Compile Include="Reports\SiteInitiationDataset1.Designer.cs" />
+    <Compile Include="Reports\SiteInitiation_Data.Designer.cs" />
+    <Compile Include="Reports\SiteInitiation_Data1.Designer.cs" />
+    <Compile Include="Reports\SIViewOpenActionItemDataset.Designer.cs" />
+    <Compile Include="Reports\SIViewOpenActionItemDataset1.Designer.cs" />
+    <Compile Include="Reports\SL_Dataset.Designer.cs" />
+    <Compile Include="Reports\SL_Info_Dataset.Designer.cs" />
+    <Compile Include="Reports\SQAgreementDataset.Designer.cs" />
+    <Compile Include="Reports\SQCommentDataset.Designer.cs" />
+    <Compile Include="Reports\SQCommentsDataset.Designer.cs" />
+    <Compile Include="Reports\SQDocDataset.Designer.cs" />
+    <Compile Include="Reports\SQInvestDataset.Designer.cs" />
+    <Compile Include="Reports\SQLabAndEquipDataset.Designer.cs" />
+    <Compile Include="Reports\SQMonitorImpDataset.Designer.cs" />
+    <Compile Include="Reports\SQOpenActionDataset.Designer.cs" />
+    <Compile Include="Reports\SQOpenActionItemDataset.Designer.cs" />
+    <Compile Include="Reports\SQPOCommentsDataset.Designer.cs" />
+    <Compile Include="Reports\SQProtectionDataset.Designer.cs" />
+    <Compile Include="Reports\SQProtocolOverviewDataset.Designer.cs" />
+    <Compile Include="Reports\SQRecruitmentCommentsDataset.Designer.cs" />
+    <Compile Include="Reports\SQRecruitmentDataset.Designer.cs" />
+    <Compile Include="Reports\SQRecuritmentDataset.Designer.cs" />
+    <Compile Include="Reports\SQRespDataset.Designer.cs" />
+    <Compile Include="Reports\SQSiteQualificationDataset.Designer.cs" />
+    <Compile Include="Report_MM_DataReview.aspx.cs">
+      <DependentUpon>Report_MM_DataReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report_MM_DataReview.aspx.designer.cs">
+      <DependentUpon>Report_MM_DataReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RiskDashboard.aspx.cs">
+      <DependentUpon>RiskDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RiskDashboard.aspx.designer.cs">
+      <DependentUpon>RiskDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="riskdata.aspx.cs">
+      <DependentUpon>riskdata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="riskdata.aspx.designer.cs">
+      <DependentUpon>riskdata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Risk_List.aspx.cs">
+      <DependentUpon>Risk_List.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Risk_List.aspx.designer.cs">
+      <DependentUpon>Risk_List.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Risk_MitigationDetails.aspx.cs">
+      <DependentUpon>Risk_MitigationDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Risk_MitigationDetails.aspx.designer.cs">
+      <DependentUpon>Risk_MitigationDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE.aspx.cs">
+      <DependentUpon>SAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE.aspx.designer.cs">
+      <DependentUpon>SAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_CM.aspx.cs">
+      <DependentUpon>SAE_CM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_CM.aspx.designer.cs">
+      <DependentUpon>SAE_CM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_DD.aspx.cs">
+      <DependentUpon>SAE_DD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_DD.aspx.designer.cs">
+      <DependentUpon>SAE_DD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_DM.aspx.cs">
+      <DependentUpon>SAE_DM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_DM.aspx.designer.cs">
+      <DependentUpon>SAE_DM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_EVTCM.aspx.cs">
+      <DependentUpon>SAE_EVTCM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_EVTCM.aspx.designer.cs">
+      <DependentUpon>SAE_EVTCM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmALLSAEReview.aspx.cs">
+      <DependentUpon>SAE_frmALLSAEReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmALLSAEReview.aspx.designer.cs">
+      <DependentUpon>SAE_frmALLSAEReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmMain.aspx.cs">
+      <DependentUpon>SAE_frmMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmMain.aspx.designer.cs">
+      <DependentUpon>SAE_frmMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmNew.aspx.cs">
+      <DependentUpon>SAE_frmNew.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmNew.aspx.designer.cs">
+      <DependentUpon>SAE_frmNew.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmSAEClosed.aspx.cs">
+      <DependentUpon>SAE_frmSAEClosed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmSAEClosed.aspx.designer.cs">
+      <DependentUpon>SAE_frmSAEClosed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmSAEList.aspx.cs">
+      <DependentUpon>SAE_frmSAEList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmSAEList.aspx.designer.cs">
+      <DependentUpon>SAE_frmSAEList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_frmSAEReview.aspx.cs">
+      <DependentUpon>SAE_frmSAEReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_frmSAEReview.aspx.designer.cs">
+      <DependentUpon>SAE_frmSAEReview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_HOSPDET.aspx.cs">
+      <DependentUpon>SAE_HOSPDET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_HOSPDET.aspx.designer.cs">
+      <DependentUpon>SAE_HOSPDET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_ListAllSAE.aspx.cs">
+      <DependentUpon>SAE_ListAllSAE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_ListAllSAE.aspx.designer.cs">
+      <DependentUpon>SAE_ListAllSAE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_MH.aspx.cs">
+      <DependentUpon>SAE_MH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_MH.aspx.designer.cs">
+      <DependentUpon>SAE_MH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SAE_ReportDisplay.aspx.cs">
+      <DependentUpon>SAE_ReportDisplay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SAE_ReportDisplay.aspx.designer.cs">
+      <DependentUpon>SAE_ReportDisplay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SafetyDashboard.aspx.cs">
+      <DependentUpon>SafetyDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SafetyDashboard.aspx.designer.cs">
+      <DependentUpon>SafetyDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SelectProject.aspx.cs">
+      <DependentUpon>SelectProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SelectProject.aspx.designer.cs">
+      <DependentUpon>SelectProject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SessionExpired.aspx.cs">
+      <DependentUpon>SessionExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MVSiteDocumentation.aspx.cs">
+      <DependentUpon>MVSiteDocumentation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVSiteDocumentation.aspx.designer.cs">
+      <DependentUpon>MVSiteDocumentation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSiteStaff.aspx.cs">
+      <DependentUpon>InitiationSiteStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSiteStaff.aspx.designer.cs">
+      <DependentUpon>InitiationSiteStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InitiationSIVSummary.aspx.cs">
+      <DependentUpon>InitiationSIVSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InitiationSIVSummary.aspx.designer.cs">
+      <DependentUpon>InitiationSIVSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVSourceDataVerfication.aspx.cs">
+      <DependentUpon>MVSourceDataVerfication.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVSourceDataVerfication.aspx.designer.cs">
+      <DependentUpon>MVSourceDataVerfication.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MVVisitSummary.aspx.cs">
+      <DependentUpon>MVVisitSummary.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MVVisitSummary.aspx.designer.cs">
+      <DependentUpon>MVVisitSummary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogSubjectScreening.aspx.cs">
+      <DependentUpon>LogSubjectScreening.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogSubjectScreening.aspx.designer.cs">
+      <DependentUpon>LogSubjectScreening.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewComments.aspx.cs">
+      <DependentUpon>ViewComments.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewComments.aspx.designer.cs">
+      <DependentUpon>ViewComments.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AdverseEventDashboard.aspx" />
+    <Content Include="CloseOutActionItem_Data.aspx" />
+    <Content Include="CTMSDashboard.aspx" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\ionicons.svg" />
+    <Content Include="frmSUBJECTREGISTRATION.aspx" />
+    <Content Include="frmVISITWINDOW.aspx" />
+    <Content Include="Graph_Screening_Failure.aspx" />
+    <Content Include="Images\CommentView2.jpg" />
+    <Content Include="Images\CommentView3.png" />
+    <Content Include="Images\index_3.png" />
+    <Content Include="Images\manualquery2.png" />
+    <Content Include="Images\manualquery6.jpg" />
+    <Content Include="Images\ViewImage.png" />
+    <Content Include="img\ajax-loader.gif" />
+    <Content Include="img\ajax-loader1.gif" />
+    <Content Include="img\avatar.png" />
+    <Content Include="img\avatar04.png" />
+    <Content Include="img\avatar2.png" />
+    <Content Include="img\avatar3.png" />
+    <Content Include="img\avatar5.png" />
+    <Content Include="img\blur-background04.jpg" />
+    <Content Include="img\blur-background08.jpg" />
+    <Content Include="img\blur-background09.jpg" />
+    <Content Include="img\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="img\bootstrap-colorpicker\alpha.png" />
+    <Content Include="img\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="img\bootstrap-colorpicker\hue.png" />
+    <Content Include="img\bootstrap-colorpicker\saturation.png" />
+    <Content Include="img\credit\american-express.png" />
+    <Content Include="img\credit\cirrus.png" />
+    <Content Include="img\credit\mastercard.png" />
+    <Content Include="img\credit\mestro.png" />
+    <Content Include="img\credit\paypal.png" />
+    <Content Include="img\credit\paypal2.png" />
+    <Content Include="img\credit\visa.png" />
+    <Content Include="img\favicon.ico" />
+    <Content Include="img\icons.png" />
+    <Content Include="img\logo-4 .png" />
+    <Content Include="img\logo44.png" />
+    <Content Include="img\sprite-skin-flat.png" />
+    <Content Include="img\sprite-skin-nice.png" />
+    <Content Include="img\user-bg.png" />
+    <Content Include="img\user.jpg" />
+    <Content Include="img\user2.jpg" />
+    <Content Include="InitiationSiteStaff_Data.aspx" />
+    <Content Include="InitiationSourceDoc.aspx" />
+    <Content Include="issueDashboard.aspx" />
+    <Content Include="IssueDetails.aspx" />
+    <Content Include="ISSUES.aspx" />
+    <Content Include="js\AdminLTE\app.js" />
+    <Content Include="js\AdminLTE\dashboard.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-ui-1.10.3.js" />
+    <Content Include="js\jquery-ui-1.10.3.min.js" />
+    <Content Include="js\jquery.session.js" />
+    <Content Include="js\plugins\bootstrap-slider\bootstrap-slider.js" />
+    <Content Include="js\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.all.min.js" />
+    <Content Include="js\plugins\bootstrap-wysihtml5\bootstrap3-wysihtml5.js" />
+    <Content Include="js\plugins\ckeditor\adapters\jquery.js" />
+    <Content Include="js\plugins\ckeditor\build-config.js" />
+    <Content Include="js\plugins\ckeditor\ckeditor.js" />
+    <Content Include="js\plugins\ckeditor\config.js" />
+    <Content Include="js\plugins\ckeditor\contents.css" />
+    <Content Include="js\plugins\ckeditor\lang\af.js" />
+    <Content Include="js\plugins\ckeditor\lang\ar.js" />
+    <Content Include="js\plugins\ckeditor\lang\bg.js" />
+    <Content Include="js\plugins\ckeditor\lang\bn.js" />
+    <Content Include="js\plugins\ckeditor\lang\bs.js" />
+    <Content Include="js\plugins\ckeditor\lang\ca.js" />
+    <Content Include="js\plugins\ckeditor\lang\cs.js" />
+    <Content Include="js\plugins\ckeditor\lang\cy.js" />
+    <Content Include="js\plugins\ckeditor\lang\da.js" />
+    <Content Include="js\plugins\ckeditor\lang\de.js" />
+    <Content Include="js\plugins\ckeditor\lang\el.js" />
+    <Content Include="js\plugins\ckeditor\lang\en-au.js" />
+    <Content Include="js\plugins\ckeditor\lang\en-ca.js" />
+    <Content Include="js\plugins\ckeditor\lang\en-gb.js" />
+    <Content Include="js\plugins\ckeditor\lang\en.js" />
+    <Content Include="js\plugins\ckeditor\lang\eo.js" />
+    <Content Include="js\plugins\ckeditor\lang\es.js" />
+    <Content Include="js\plugins\ckeditor\lang\et.js" />
+    <Content Include="js\plugins\ckeditor\lang\eu.js" />
+    <Content Include="js\plugins\ckeditor\lang\fa.js" />
+    <Content Include="js\plugins\ckeditor\lang\fi.js" />
+    <Content Include="js\plugins\ckeditor\lang\fo.js" />
+    <Content Include="js\plugins\ckeditor\lang\fr-ca.js" />
+    <Content Include="js\plugins\ckeditor\lang\fr.js" />
+    <Content Include="js\plugins\ckeditor\lang\gl.js" />
+    <Content Include="js\plugins\ckeditor\lang\gu.js" />
+    <Content Include="js\plugins\ckeditor\lang\he.js" />
+    <Content Include="js\plugins\ckeditor\lang\hi.js" />
+    <Content Include="js\plugins\ckeditor\lang\hr.js" />
+    <Content Include="js\plugins\ckeditor\lang\hu.js" />
+    <Content Include="js\plugins\ckeditor\lang\id.js" />
+    <Content Include="js\plugins\ckeditor\lang\is.js" />
+    <Content Include="js\plugins\ckeditor\lang\it.js" />
+    <Content Include="js\plugins\ckeditor\lang\ja.js" />
+    <Content Include="js\plugins\ckeditor\lang\ka.js" />
+    <Content Include="js\plugins\ckeditor\lang\km.js" />
+    <Content Include="js\plugins\ckeditor\lang\ko.js" />
+    <Content Include="js\plugins\ckeditor\lang\ku.js" />
+    <Content Include="js\plugins\ckeditor\lang\lt.js" />
+    <Content Include="js\plugins\ckeditor\lang\lv.js" />
+    <Content Include="js\plugins\ckeditor\lang\mk.js" />
+    <Content Include="js\plugins\ckeditor\lang\mn.js" />
+    <Content Include="js\plugins\ckeditor\lang\ms.js" />
+    <Content Include="js\plugins\ckeditor\lang\nb.js" />
+    <Content Include="js\plugins\ckeditor\lang\nl.js" />
+    <Content Include="js\plugins\ckeditor\lang\no.js" />
+    <Content Include="js\plugins\ckeditor\lang\pl.js" />
+    <Content Include="js\plugins\ckeditor\lang\pt-br.js" />
+    <Content Include="js\plugins\ckeditor\lang\pt.js" />
+    <Content Include="js\plugins\ckeditor\lang\ro.js" />
+    <Content Include="js\plugins\ckeditor\lang\ru.js" />
+    <Content Include="js\plugins\ckeditor\lang\si.js" />
+    <Content Include="js\plugins\ckeditor\lang\sk.js" />
+    <Content Include="js\plugins\ckeditor\lang\sl.js" />
+    <Content Include="js\plugins\ckeditor\lang\sq.js" />
+    <Content Include="js\plugins\ckeditor\lang\sr-latn.js" />
+    <Content Include="js\plugins\ckeditor\lang\sr.js" />
+    <Content Include="js\plugins\ckeditor\lang\sv.js" />
+    <Content Include="js\plugins\ckeditor\lang\th.js" />
+    <Content Include="js\plugins\ckeditor\lang\tr.js" />
+    <Content Include="js\plugins\ckeditor\lang\ug.js" />
+    <Content Include="js\plugins\ckeditor\lang\uk.js" />
+    <Content Include="js\plugins\ckeditor\lang\vi.js" />
+    <Content Include="js\plugins\ckeditor\lang\zh-cn.js" />
+    <Content Include="js\plugins\ckeditor\lang\zh.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="js\plugins\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="js\plugins\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="js\plugins\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="js\plugins\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="js\plugins\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="js\plugins\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="js\plugins\ckeditor\plugins\fakeobjects\images\spacer.gif" />
+    <Content Include="js\plugins\ckeditor\plugins\icons.png" />
+    <Content Include="js\plugins\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="js\plugins\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="js\plugins\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="js\plugins\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="js\plugins\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="js\plugins\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="js\plugins\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="js\plugins\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="js\plugins\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="js\plugins\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="js\plugins\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="js\plugins\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="js\plugins\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="js\plugins\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="js\plugins\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\tmp.html" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="js\plugins\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog_ie.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog_ie7.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog_ie8.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog_iequirks.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\dialog_opera.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor_gecko.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor_ie.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor_ie7.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor_ie8.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\editor_iequirks.css" />
+    <Content Include="js\plugins\ckeditor\skins\moono\icons.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\icons_hidpi.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\arrow.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\close.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\hidpi\close.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\hidpi\lock-open.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\hidpi\lock.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\hidpi\refresh.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\lock-open.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\lock.png" />
+    <Content Include="js\plugins\ckeditor\skins\moono\images\refresh.png" />
+    <Content Include="js\plugins\ckeditor\styles.js" />
+    <Content Include="js\plugins\colorpicker\bootstrap-colorpicker.js" />
+    <Content Include="js\plugins\colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="js\plugins\datatables\dataTables.bootstrap.js" />
+    <Content Include="js\plugins\datatables\jquery.dataTables.js" />
+    <Content Include="js\plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="js\plugins\flot\excanvas.js" />
+    <Content Include="js\plugins\flot\excanvas.min.js" />
+    <Content Include="js\plugins\flot\jquery.colorhelpers.js" />
+    <Content Include="js\plugins\flot\jquery.colorhelpers.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.canvas.js" />
+    <Content Include="js\plugins\flot\jquery.flot.canvas.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.categories.js" />
+    <Content Include="js\plugins\flot\jquery.flot.categories.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.crosshair.js" />
+    <Content Include="js\plugins\flot\jquery.flot.crosshair.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.errorbars.js" />
+    <Content Include="js\plugins\flot\jquery.flot.errorbars.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.fillbetween.js" />
+    <Content Include="js\plugins\flot\jquery.flot.fillbetween.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.image.js" />
+    <Content Include="js\plugins\flot\jquery.flot.image.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.js" />
+    <Content Include="js\plugins\flot\jquery.flot.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.navigate.js" />
+    <Content Include="js\plugins\flot\jquery.flot.navigate.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="js\plugins\flot\jquery.flot.pie.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="js\plugins\flot\jquery.flot.resize.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.selection.js" />
+    <Content Include="js\plugins\flot\jquery.flot.selection.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.stack.js" />
+    <Content Include="js\plugins\flot\jquery.flot.stack.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.symbol.js" />
+    <Content Include="js\plugins\flot\jquery.flot.symbol.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.threshold.js" />
+    <Content Include="js\plugins\flot\jquery.flot.threshold.min.js" />
+    <Content Include="js\plugins\flot\jquery.flot.time.js" />
+    <Content Include="js\plugins\flot\jquery.flot.time.min.js" />
+    <Content Include="js\plugins\fullcalendar\fullcalendar.js" />
+    <Content Include="js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="js\plugins\iCheck\icheck.js" />
+    <Content Include="js\plugins\iCheck\icheck.min.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.date.extensions.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.extensions.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.numeric.extensions.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.phone.extensions.js" />
+    <Content Include="js\plugins\input-mask\jquery.inputmask.regex.extensions.js" />
+    <Content Include="js\plugins\input-mask\phone-codes\readme.txt" />
+    <Content Include="js\plugins\ionslider\ion.rangeSlider.min.js" />
+    <Content Include="js\plugins\jqueryKnob\jquery.knob.js" />
+    <Content Include="js\plugins\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="js\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="js\plugins\misc\html5shiv.js" />
+    <Content Include="js\plugins\misc\jquery.ba-resize.min.js" />
+    <Content Include="js\plugins\misc\jquery.placeholder.js" />
+    <Content Include="js\plugins\misc\modernizr.min.js" />
+    <Content Include="js\plugins\misc\respond.min.js" />
+    <Content Include="js\plugins\morris\morris.js" />
+    <Content Include="js\plugins\morris\morris.min.js" />
+    <Content Include="js\plugins\slimScroll\jquery.slimscroll.js" />
+    <Content Include="js\plugins\slimScroll\jquery.slimscroll.min.js" />
+    <Content Include="js\plugins\sparkline\jquery.sparkline.js" />
+    <Content Include="js\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="js\plugins\timepicker\bootstrap-timepicker.js" />
+    <Content Include="js\plugins\timepicker\bootstrap-timepicker.min.js" />
+    <Content Include="LabDataDashboard.aspx" />
+    <Content Include="LogICT.aspx" />
+    <Content Include="LogSAE.aspx" />
+    <Content Include="LogSAEDetails.aspx" />
+    <Content Include="LogSubjectEnrollment.aspx" />
+    <Content Include="MedicalDashboard.aspx" />
+    <Content Include="MM_AdverseEventsDetails.aspx" />
+    <Content Include="MM_AEFilter_List.aspx" />
+    <Content Include="MM_AE_SubjectList.aspx" />
+    <Content Include="MM_AE_WithoutCM.aspx" />
+    <Content Include="MM_AllAEComments.aspx" />
+    <Content Include="MM_AllCatComments.aspx" />
+    <Content Include="MM_CategoryDashboard.aspx" />
+    <Content Include="MM_CMList.aspx" />
+    <Content Include="MM_CMWithoutIFU.aspx" />
+    <Content Include="MM_CM_Ongoing.aspx" />
+    <Content Include="MM_CM_Uncoded.aspx" />
+    <Content Include="MM_Customized_AE_Filter.aspx" />
+    <Content Include="MM_DataReview.aspx" />
+    <Content Include="MM_Discontinuation.aspx" />
+    <Content Include="MM_DoseDelayed.aspx" />
+    <Content Include="MM_EventDashboard.aspx" />
+    <Content Include="MM_EventListAE.aspx" />
+    <Content Include="MM_EventOfInterest.aspx" />
+    <Content Include="MM_FilterPieChart.aspx" />
+    <Content Include="MM_frmLabCatResAE.aspx" />
+    <Content Include="MM_GradeDashboardViewDetails.aspx" />
+    <Content Include="MM_GradesDashboard.aspx" />
+    <Content Include="MM_Hys.aspx" />
+    <Content Include="MM_ImportData.aspx" />
+    <Content Include="MM_InfusionReaction.aspx" />
+    <Content Include="MM_IssueList.aspx" />
+    <Content Include="MM_IssueListPopup.aspx" />
+    <Content Include="MM_LabCatagoryData.aspx" />
+    <Content Include="MM_LabDataCategorization.aspx" />
+    <Content Include="MM_LabDataChemistry.aspx" />
+    <Content Include="MM_LabDataGrade34.aspx" />
+    <Content Include="MM_LabModifiedData.aspx" />
+    <Content Include="MM_LabRawDataHematology.aspx" />
+    <Content Include="MM_LabResCatCM.aspx" />
+    <Content Include="MM_LabResCatMH.aspx" />
+    <Content Include="MM_LabResCatVS.aspx" />
+    <Content Include="MM_LabResTab.aspx" />
+    <Content Include="MM_LabResultCategorization.aspx" />
+    <Content Include="MM_LabResultsTabular.aspx" />
+    <Content Include="MM_MHList.aspx" />
+    <Content Include="MM_OngoingEvents.aspx" />
+    <Content Include="MM_PopupAeEvents.aspx" />
+    <Content Include="MM_PopupGraph.aspx" />
+    <Content Include="MM_PopupInclusionExclusion.aspx" />
+    <Content Include="MM_PopUpLabResultsTabular.aspx" />
+    <Content Include="MM_PopUpQueryList.aspx" />
+    <Content Include="MM_PopupTopAeFilter.aspx" />
+    <Content Include="MM_PopUp_LabData.aspx" />
+    <Content Include="MM_QueryList.aspx" />
+    <Content Include="MM_ReCategory.aspx" />
+    <Content Include="MM_RelatedEvents.aspx" />
+    <Content Include="MM_SeriousEvents.aspx" />
+    <Content Include="MM_Severity12Events.aspx" />
+    <Content Include="MM_Severity34Events.aspx" />
+    <Content Include="MM_SiteReview.aspx" />
+    <Content Include="MM_UncodedEvents.aspx" />
+    <Content Include="MM_UNVISIT.aspx" />
+    <Content Include="MM_VisitDates.aspx" />
+    <Content Include="MM_VitalSigns.aspx" />
+    <Content Include="MM_VSList.aspx" />
+    <Content Include="NewIssuePopup.aspx" />
+    <Content Include="NewISSUES.aspx" />
+    <Content Include="NewQueryPopup.aspx" />
+    <Content Include="PDList.aspx" />
+    <Content Include="ProjectManagementDashboard.aspx" />
+    <Content Include="ProtDev.aspx" />
+    <Content Include="QualificationActionItem.aspx" />
+    <Content Include="AddComments.aspx" />
+    <Content Include="Add_User_Groups.aspx" />
+    <Content Include="Add_User_Group_Rights.aspx" />
+    <Content Include="Add_User_Profile.aspx" />
+    <Content Include="Add_User_Rights.aspx" />
+    <Content Include="QualificationActionItem_Data.aspx" />
+    <Content Include="QualificationAgreementAndContracts.aspx" />
+    <Content Include="AjaxFunction.aspx" />
+    <Content Include="Auth.aspx" />
+    <Content Include="Change_Password.aspx" />
+    <Content Include="MVClinicalLaboratory.aspx" />
+    <Content Include="CloseOutActionItemsSummary.aspx" />
+    <Content Include="CloseOutAdverseEvents.aspx" />
+    <Content Include="CloseOutArchival.aspx" />
+    <Content Include="CloseOutContactDetails.aspx" />
+    <Content Include="CloseOutCRF.aspx" />
+    <Content Include="CloseOutDrugAndTreatment.aspx" />
+    <Content Include="CloseOutHandling.aspx" />
+    <Content Include="CloseOutInspection.aspx" />
+    <Content Include="CloseOutInvestSiteFile.aspx" />
+    <Content Include="CloseOutMiscellaneous.aspx" />
+    <Content Include="CloseOutObligation.aspx" />
+    <Content Include="CloseOutPremature.aspx" />
+    <Content Include="CloseOutReason.aspx" />
+    <Content Include="CloseOutRT.aspx" />
+    <Content Include="CloseOutSourceData.aspx" />
+    <Content Include="CreateNewVisit.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Delete_User_Group.aspx" />
+    <Content Include="QualificationDocumentation.aspx" />
+    <Content Include="Edit_User_Details.aspx" />
+    <Content Include="Edit_User_Group_Details.aspx" />
+    <Content Include="MVEligibilityCheck.aspx" />
+    <Content Include="MVFacilities.aspx" />
+    <Content Include="Feasibility.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmINSTITUTEDetails.aspx" />
+    <Content Include="frmINVDETAILS.aspx" />
+    <Content Include="frmPRODUCTDETAILS.aspx" />
+    <Content Include="frmPROJDETAILS.aspx" />
+    <Content Include="frmSUBJDETAILS.aspx" />
+    <Content Include="frmVISITDETAILS.aspx" />
+    <Content Include="frnCOUNTRYDETAILS.aspx" />
+    <Content Include="InitiationHandlingAndSupply.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\clinic-management-system-software.jpg" />
+    <Content Include="Images\clinic-management-system-software_1.jpg" />
+    <Content Include="Images\headerbg.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\nav-header.png" />
+    <Content Include="Images\tumblr_inline_ohi48igbzl1sqq6lc_540.jpg" />
+    <Content Include="MVInformedConsent.aspx" />
+    <Content Include="QualificationInfrastructure.aspx" />
+    <Content Include="InitiationFacilities.aspx" />
+    <Content Include="InitiationSafteyReporting.aspx" />
+    <Content Include="MVInvestigationalProduct.aspx" />
+    <Content Include="MVInvestigatorStaff.aspx" />
+    <Content Include="QualificationInvestProduct.aspx" />
+    <Content Include="QualificationInvestResponsibilities.aspx" />
+    <Content Include="QualificationLaboratoryAndEquipment.aspx" />
+    <Content Include="QualificationMonitorImpression.aspx" />
+    <Content Include="MonitoringVisitList.aspx" />
+    <Content Include="MVOpenActionItem.aspx" />
+    <Content Include="InitiationOpenActionItem_Data.aspx" />
+    <Content Include="InitiationOpenActionitem.aspx" />
+    <Content Include="MVOpenActionItem_Data.aspx" />
+    <Content Include="QualificationPatientProtection.aspx" />
+    <Content Include="MVPKProcedure.aspx" />
+    <Content Include="InitiationProjectionAndRecruitment.aspx" />
+    <Content Include="QualificationProtocolOverview.aspx" />
+    <Content Include="QualificaionAndExp.aspx" />
+    <Content Include="QualificationRecruitment.aspx" />
+    <Content Include="QueryListUpdate.aspx" />
+    <Content Include="Remove_User_Group_Rights.aspx" />
+    <Content Include="Remove_User_Rights.aspx" />
+    <Content Include="InitiationReviewAndProtocol.aspx" />
+    <Content Include="InitiationRolesAndResponsibility.aspx" />
+    <Content Include="MVSafetyReporting.aspx" />
+    <Content Include="InitiationSampling.aspx" />
+    <Content Include="ReportEnrollmentLog.aspx" />
+    <Content Include="ReportICTLog.aspx" />
+    <Content Include="ReportMonitoringVisit.aspx" />
+    <Content Include="ReportScreeningLog.aspx" />
+    <Content Include="ReportSiteCloseOut.aspx" />
+    <Content Include="ReportSiteInitiation.aspx" />
+    <Content Include="ReportSiteQualification.aspx" />
+    <Content Include="Report_MM_DataReview.aspx" />
+    <Content Include="RiskDashboard.aspx" />
+    <Content Include="riskdata.aspx" />
+    <Content Include="Risk_List.aspx" />
+    <Content Include="Risk_MitigationDetails.aspx" />
+    <Content Include="SAE.aspx" />
+    <Content Include="SAE_CM.aspx" />
+    <Content Include="SAE_DD.aspx" />
+    <Content Include="SAE_DM.aspx" />
+    <Content Include="SAE_EVTCM.aspx" />
+    <Content Include="SAE_frmALLSAEReview.aspx" />
+    <Content Include="SAE_frmMain.aspx" />
+    <Content Include="SAE_frmNew.aspx" />
+    <Content Include="SAE_frmSAEClosed.aspx" />
+    <Content Include="SAE_frmSAEList.aspx" />
+    <Content Include="SAE_frmSAEReview.aspx" />
+    <Content Include="SAE_HOSPDET.aspx" />
+    <Content Include="SAE_ListAllSAE.aspx" />
+    <Content Include="SAE_MH.aspx" />
+    <Content Include="SAE_ReportDisplay.aspx" />
+    <Content Include="SafetyDashboard.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\ClientValidation.js" />
+    <Content Include="Scripts\Datatable.1.10.15.UI.js" />
+    <Content Include="Scripts\Datatable1.10.15.js" />
+    <Content Include="Scripts\index.js" />
+    <Content Include="Scripts\jquery-1.7.2.min.js" />
+    <Content Include="Scripts\jquery-ui-timepicker-addon.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Scripts\jquery.alerts.js" />
+    <Content Include="Scripts\Jquery1.12.4.js" />
+    <Content Include="Scripts\moment.js" />
+    <Content Include="Scripts\npm.js" />
+    <Content Include="Scripts\pikaday.jquery.js" />
+    <Content Include="Scripts\pikaday.js" />
+    <Content Include="Scripts\Utility.js" />
+    <Content Include="SelectProject.aspx" />
+    <Content Include="SessionExpired.aspx" />
+    <Content Include="MVSiteDocumentation.aspx" />
+    <Content Include="InitiationSiteStaff.aspx" />
+    <Content Include="InitiationSIVSummary.aspx" />
+    <Content Include="MVSourceDataVerfication.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+    <Content Include="MVVisitSummary.aspx" />
+    <Content Include="LogSubjectScreening.aspx" />
+    <Content Include="Styles\AdminLTE.css" />
+    <Content Include="Styles\bootstrap-theme.css" />
+    <Content Include="Styles\bootstrap.css" />
+    <Content Include="Styles\Common-Bootstrap.css" />
+    <Content Include="Styles\DatatableUi1.css" />
+    <Content Include="Styles\DatatbleUi2.css" />
+    <Content Include="Styles\demo_table1.7.2.css" />
+    <Content Include="Styles\demo_table_jui1.7.2.css" />
+    <Content Include="Styles\font-awesome.css" />
+    <Content Include="Styles\ionicons.css" />
+    <Content Include="Styles\jquery-ui-timepicker-addon.css" />
+    <Content Include="Styles\jquery.alerts.css" />
+    <Content Include="Styles\Jquery.ui.css" />
+    <Content Include="Styles\pikaday.css" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="ViewComments.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\fontawesome-webfont.eot" />
+    <None Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\FontAwesome.otf" />
+    <None Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="fonts\glyphicons-halflings-regular.woff" />
+    <None Include="fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="fonts\ionicons.eot" />
+    <None Include="fonts\ionicons.ttf" />
+    <None Include="js\plugins\ckeditor\CHANGES.md" />
+    <None Include="js\plugins\ckeditor\LICENSE.md" />
+    <None Include="js\plugins\ckeditor\plugins\scayt\LICENSE.md" />
+    <None Include="js\plugins\ckeditor\plugins\scayt\README.md" />
+    <None Include="js\plugins\ckeditor\plugins\wsc\LICENSE.md" />
+    <None Include="js\plugins\ckeditor\plugins\wsc\README.md" />
+    <None Include="js\plugins\ckeditor\README.md" />
+    <None Include="js\plugins\ckeditor\skins\moono\readme.md" />
+    <None Include="js\plugins\input-mask\phone-codes\phone-be.json" />
+    <None Include="js\plugins\input-mask\phone-codes\phone-codes.json" />
+    <None Include="js\plugins\slimScroll\slimScroll.jquery.json" />
+    <None Include="Reports\COIdentityDataset.xsc">
+      <DependentUpon>COIdentityDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\COIdentityDataset.xsd" />
+    <None Include="Reports\COIdentityDataset.xss">
+      <DependentUpon>COIdentityDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_5_15_Dataset.xsc">
+      <DependentUpon>CO_5_15_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_5_15_Dataset.xsd" />
+    <None Include="Reports\CO_5_15_Dataset.xss">
+      <DependentUpon>CO_5_15_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_5_16_DataSet2.xsc">
+      <DependentUpon>CO_5_16_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_5_16_DataSet2.xsd" />
+    <None Include="Reports\CO_5_16_DataSet2.xss">
+      <DependentUpon>CO_5_16_DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_Dataset_5_16.xsc">
+      <DependentUpon>CO_Dataset_5_16.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\CO_Dataset_5_16.xsd" />
+    <None Include="Reports\CO_Dataset_5_16.xss">
+      <DependentUpon>CO_Dataset_5_16.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLogDetails_Dataset.xsc">
+      <DependentUpon>ICTLogDetails_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLogDetails_Dataset.xsd" />
+    <None Include="Reports\ICTLogDetails_Dataset.xss">
+      <DependentUpon>ICTLogDetails_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLogInfo_Dataset.xsc">
+      <DependentUpon>ICTLogInfo_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLogInfo_Dataset.xsd" />
+    <None Include="Reports\ICTLogInfo_Dataset.xss">
+      <DependentUpon>ICTLogInfo_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLog_Dataset.xsc">
+      <DependentUpon>ICTLog_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ICTLog_Dataset.xsd" />
+    <None Include="Reports\ICTLog_Dataset.xss">
+      <DependentUpon>ICTLog_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportQualAndExpDataset.xsc">
+      <DependentUpon>ReportQualAndExpDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportQualAndExpDataset.xsd" />
+    <None Include="Reports\ReportQualAndExpDataset.xss">
+      <DependentUpon>ReportQualAndExpDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportQualificationDataset.xsc">
+      <DependentUpon>ReportQualificationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\ReportQualificationDataset.xsd" />
+    <None Include="Reports\ReportQualificationDataset.xss">
+      <DependentUpon>ReportQualificationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SIReportDataset.xsc">
+      <DependentUpon>SIReportDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SIReportDataset.xsd" />
+    <None Include="Reports\SIReportDataset.xss">
+      <DependentUpon>SIReportDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiationCommentsDataset.xsc">
+      <DependentUpon>SiteInitiationCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiationCommentsDataset.xsd" />
+    <None Include="Reports\SiteInitiationCommentsDataset.xss">
+      <DependentUpon>SiteInitiationCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiationDataset.xsc">
+      <DependentUpon>SiteInitiationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiationDataset.xsd" />
+    <None Include="Reports\SiteInitiationDataset.xss">
+      <DependentUpon>SiteInitiationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiation_Data.xsc">
+      <DependentUpon>SiteInitiation_Data.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SiteInitiation_Data.xsd" />
+    <None Include="Reports\SiteInitiation_Data.xss">
+      <DependentUpon>SiteInitiation_Data.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SIViewOpenActionItemDataset.xsc">
+      <DependentUpon>SIViewOpenActionItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SIViewOpenActionItemDataset.xsd" />
+    <None Include="Reports\SIViewOpenActionItemDataset.xss">
+      <DependentUpon>SIViewOpenActionItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SL_Dataset.xsc">
+      <DependentUpon>SL_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SL_Dataset.xsd" />
+    <None Include="Reports\SL_Dataset.xss">
+      <DependentUpon>SL_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SL_Info_Dataset.xsc">
+      <DependentUpon>SL_Info_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SL_Info_Dataset.xsd" />
+    <None Include="Reports\SL_Info_Dataset.xss">
+      <DependentUpon>SL_Info_Dataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQAgreementDataset.xsc">
+      <DependentUpon>SQAgreementDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQAgreementDataset.xsd" />
+    <None Include="Reports\SQAgreementDataset.xss">
+      <DependentUpon>SQAgreementDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQCommentDataset.xsc">
+      <DependentUpon>SQCommentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQCommentDataset.xsd" />
+    <None Include="Reports\SQCommentDataset.xss">
+      <DependentUpon>SQCommentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQCommentsDataset.xsc">
+      <DependentUpon>SQCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQCommentsDataset.xsd" />
+    <None Include="Reports\SQCommentsDataset.xss">
+      <DependentUpon>SQCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQDocDataset.xsc">
+      <DependentUpon>SQDocDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQDocDataset.xsd" />
+    <None Include="Reports\SQDocDataset.xss">
+      <DependentUpon>SQDocDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQInvestDataset.xsc">
+      <DependentUpon>SQInvestDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQInvestDataset.xsd" />
+    <None Include="Reports\SQInvestDataset.xss">
+      <DependentUpon>SQInvestDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQLabAndEquipDataset.xsc">
+      <DependentUpon>SQLabAndEquipDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQLabAndEquipDataset.xsd" />
+    <None Include="Reports\SQLabAndEquipDataset.xss">
+      <DependentUpon>SQLabAndEquipDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQMonitorImpDataset.xsc">
+      <DependentUpon>SQMonitorImpDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQMonitorImpDataset.xsd" />
+    <None Include="Reports\SQMonitorImpDataset.xss">
+      <DependentUpon>SQMonitorImpDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQOpenActionDataset.xsc">
+      <DependentUpon>SQOpenActionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQOpenActionDataset.xsd" />
+    <None Include="Reports\SQOpenActionDataset.xss">
+      <DependentUpon>SQOpenActionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQOpenActionItemDataset.xsc">
+      <DependentUpon>SQOpenActionItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQOpenActionItemDataset.xsd" />
+    <None Include="Reports\SQOpenActionItemDataset.xss">
+      <DependentUpon>SQOpenActionItemDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQPOCommentsDataset.xsc">
+      <DependentUpon>SQPOCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQPOCommentsDataset.xsd" />
+    <None Include="Reports\SQPOCommentsDataset.xss">
+      <DependentUpon>SQPOCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQProtectionDataset.xsc">
+      <DependentUpon>SQProtectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQProtectionDataset.xsd" />
+    <None Include="Reports\SQProtectionDataset.xss">
+      <DependentUpon>SQProtectionDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQProtocolOverviewDataset.xsc">
+      <DependentUpon>SQProtocolOverviewDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQProtocolOverviewDataset.xsd" />
+    <None Include="Reports\SQProtocolOverviewDataset.xss">
+      <DependentUpon>SQProtocolOverviewDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecruitmentCommentsDataset.xsc">
+      <DependentUpon>SQRecruitmentCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecruitmentCommentsDataset.xsd" />
+    <None Include="Reports\SQRecruitmentCommentsDataset.xss">
+      <DependentUpon>SQRecruitmentCommentsDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecruitmentDataset.xsc">
+      <DependentUpon>SQRecruitmentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecruitmentDataset.xsd" />
+    <None Include="Reports\SQRecruitmentDataset.xss">
+      <DependentUpon>SQRecruitmentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecuritmentDataset.xsc">
+      <DependentUpon>SQRecuritmentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRecuritmentDataset.xsd" />
+    <None Include="Reports\SQRecuritmentDataset.xss">
+      <DependentUpon>SQRecuritmentDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRespDataset.xsc">
+      <DependentUpon>SQRespDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQRespDataset.xsd" />
+    <None Include="Reports\SQRespDataset.xss">
+      <DependentUpon>SQRespDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQSiteQualificationDataset.xsc">
+      <DependentUpon>SQSiteQualificationDataset.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\SQSiteQualificationDataset.xsd" />
+    <None Include="Reports\SQSiteQualificationDataset.xss">
+      <DependentUpon>SQSiteQualificationDataset.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\ReportCloseOut.rdlc" />
+    <EmbeddedResource Include="Reports\ReportEnrollmentLog.rdlc" />
+    <EmbeddedResource Include="Reports\ReportICTLog.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualAgreements.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualDocumentation.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualInvestProduct.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualLaboratoryAndEquipment.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualMonitorImpression.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualOpenActionItem.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualPatientProtection.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualProtocolOverview.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualQualification.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualRecruitment.rdlc" />
+    <EmbeddedResource Include="Reports\ReportQualResponsibilities.rdlc" />
+    <EmbeddedResource Include="Reports\ReportScreeningLog.rdlc" />
+    <EmbeddedResource Include="Reports\ReportSiteInitiation.rdlc" />
+    <EmbeddedResource Include="Reports\ReportSiteInitiationSummarySIV.rdlc" />
+    <EmbeddedResource Include="Reports\ReportSiteQualification.rdlc" />
+    <EmbeddedResource Include="Reports\Report_MM_DataReview.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_1.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_11.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_12.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_13.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_14.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_15.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_16.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_2.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_4.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_5.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_6.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_7.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_8.rdlc" />
+    <EmbeddedResource Include="Reports\rptMV2_9.rdlc" />
+    <EmbeddedResource Include="Reports\rptMVMAIN.rdlc" />
+    <EmbeddedResource Include="Reports\SubReportCloseOut.rdlc" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52810</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
